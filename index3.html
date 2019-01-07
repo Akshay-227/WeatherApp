@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>var, let, const</title>
+</head>
+<body>
+    <script>
+      let module1= (function(){
+          let arr=[10, 11, 15, 17];
+
+          let biggestArr=()=>{
+              let max=Math.max();
+              for(let i=0;i<=arr.length-1;i++)
+              if(arr[i]>max) max=arr[i];
+            return max;
+          }
+
+          return{
+              biggestArr
+          }
+      })();
+
+      console.log(module1.biggestArr());
+       
+        
+    </script>
+    
+</body>
+</html>
